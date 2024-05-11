@@ -6,7 +6,8 @@
     --mainLinkColor: #4a90e2;
     --mainBorderColor: #333;
     --mainBgColor: #282c34;
-    --hoverEffectColor: rgba(255, 255, 255, 0.1);  // Light overlay for hover effect
+        --hoverEffectColor: rgba(255, 255, 255, 0.1);  // Light overlay for hover effect
+    /* Add a CSS selector or at-rule after the closing brace */
 }
 
 * {
@@ -63,7 +64,8 @@ body {
 }
 
 #profile-pic:hover {
-    transform: scale(1.1);  // Slightly enlarges the profile picture on hover
+        transform: scale(1.1);  // Slightly enlarges the profile picture on hover
+    
 }
 
 #user-name {
