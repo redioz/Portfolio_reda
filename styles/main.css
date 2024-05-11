@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --mainTextColor: #fff;
+    --secondaryTextColor: #bbb;
+    --mainLinkColor: #4a90e2;
+    --mainBorderColor: #333;
+    --mainBgColor: #282c34;
+    --hoverEffectColor: rgba(255, 255, 255, 0.1);  // Light overlay for hover effect
+}
+
+* {
+    font-family: 'Readex Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--mainTextColor);
+    transition: all 0.2s ease-in-out;
+}
+
+body {
+    background-color: var(--mainBgColor);
+    padding: 40px;
+    line-height: 1.8;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#container--main {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    background: #1c1f26;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.section--page {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: transparent;
+    border-bottom: 1px solid var(--mainBorderColor);
+}
+
+#wrapper--hero {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid var(--mainBorderColor);
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+#profile-pic:hover {
+    transform: scale(1.1);  // Slightly enlarges the profile picture on hover
+}
+
+#user-name {
+    font-size: 2.5rem;
+}
+
+#bio {
+    font-weight: 300;
+    color: var(--secondaryTextColor);
+}
+
+.card--work-history, .skills-box {
+    background: #20232a;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card--work-history:hover, .skills-box:hover {
+    background-color: var(--hoverEffectColor);
+    transform: translateY(-5px);
+}
+
+.card--work-history h3, .skills-box h3 {
+    font-size: 1.5rem;
+    color: var(--mainLinkColor);
+    margin-bottom: 10px;
+}
+
+.card--work-history p, .card--work-history ul, .skills-box p, .skills-box ul {
+    font-size: 1rem;
+    color: var(--secondaryTextColor);
+}
+
+.card--work-history ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.card--work-history ul li:before {
+    content: '• ';
+    margin-right: 10px;
+    color: var(--mainLinkColor);
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-box {
+    flex: 1;
+    margin: 0 10px;
+}
+
+a {
+    color: var(--mainLinkColor);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    #container--main {
+        padding: 20px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    #profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    #wrapper--hero {
+        flex-direction: column;
+        align-items: center;
+    }
+}
