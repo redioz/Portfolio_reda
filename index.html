@@ -11,6 +11,36 @@
 <body>
     <div id="container--main">
 
+
+
+        <section class="section--page">
+            <button class="language-button" onclick="window.location.href='indexFr.html'">
+                <span class="button-text">Click for French Version</span>
+            </button>
+        </section>
+        <style>
+            .language-button {
+                background-color:  #007bff;
+                color: white;
+                border: none;
+                padding: 5px 10px;
+                font-size: 14px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .language-button:hover {
+                background-color: blue;
+            }
+
+            .button-text {
+                font-weight: bold;
+            }
+        </style>
+
         <section id="wrapper--hero" class="section--page">
             <img id="profile-pic" src="./assets/images/pic.png">
             <div>
@@ -64,7 +94,7 @@
                         <span style="font-size: 12px;">
                             <img src="./assets/images/UMBC.jpeg" alt="University of Baltimore Maryland County" style="width: 40px; height: 40px; border-radius: 50%; vertical-align: middle;">
                         </span>
-                        University of Baltimore Maryland County, Exchange Student - AI & Information Systems (2023-2024)
+                        University of Baltimore Maryland County, Exchange Student - AI & Information Systems (2023-2024) 
                     <li>
                             <span style="font-size: 12px;">
                                 <img src="assets/images/Unicaen.jpeg" alt="University of Caen ESIX School of Engineering" style="width: 40px; height: 40px; border-radius: 50%; vertical-align: middle;">
@@ -82,10 +112,15 @@
         <section id="work-history-wrapper" class="section--page">
             <h2>Professional Experience</h2>
             <div class="card--work-history">
-                <strong>🚧 Founder | ARES Study Office, University of Caen</strong>
+                <a href="https://www.ares-fr.com/" target="_blank">
+                    <strong>🚧 Founder | ARES: The Engineering Study Office </strong>
+                    <img src="assets/images/ARES.webp" alt="ARES Study Office" style="width: 40px; height: 40px; border-radius: 50%; vertical-align: middle;">
+                </a>
                 <p>September 2023 - Present</p>
                 <ul>
+                    <li>Founded Ares the company that connects companies with students through engineering projects.</li>
                     <li>Leading and Managing daily operations and processes for an organization of five people.</li>
+                    Ares projects: 
                     <li>Supervised the production of specialized equipment for Esix cafeteria enhancing durability.</li>
                     <li>Led AI integration projects to optimize SME processes, significantly improving efficiency.</li>
                     <li>Developed custom websites to enhance client online presence and engagement.</li>
